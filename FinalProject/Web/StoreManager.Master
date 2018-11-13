@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StoreManager.Master.cs" Inherits="AD.ClerkManager" %>
+<%--YANGXU--%>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<link href="Content/bootstrap.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<link href="Content/bootstrap.min.css" rel="stylesheet" />
+	<script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
+	<script src="Scripts/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<style>
+		body {
+			width: 100%;
+		}
+
+		.navbar-nav > li {
+			display: inline-block;
+			white-space: nowrap;
+		}
+
+		a:link {
+			color: #FFFFFF;
+		}
+
+		a:active {
+			background-color: #FFFFFF;
+		}
+
+		.navbar-nav > li a:hover {
+			background-color: #000000;
+			text-decoration-color: aqua;
+		}
+
+		.auto-style1 {
+			left: 0px;
+			top: 0px;
+		}
+
+		#content {
+			margin: 0;
+			width: 100%;
+			min-height: 500px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: lighter;
+			background-size: 100%,100%;
+			background-image: url("C:\Users\e0288741\Desktop\0804ADPROJGuo\AD-Intergration-final-final-final-final\AD\image\background.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+	</style>
+</head>
+<body>
+	<form id="form1" method="post" runat="server">
+		<nav class="navbar fixed-top" id="mainNav" style="height:100%;min-height:100px; background-color: #333333;border-radius:0px;">
+			 <div>
+				 <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-family: Arial; font-size: xx-large; color: #fbc531; padding-left: 0px">Stationery Store</a>
+				<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Size="large" ForeColor="White" OnMenuItemClick="Menu1_MenuItemClick" DynamicVerticalOffset="15" Height="55px">
+					<DynamicMenuStyle HorizontalPadding="20px" VerticalPadding="20px" />
+					<Items>
+						<asp:MenuItem NavigateUrl="~/StorePage/ManagerHomePage.aspx" Text="    Home    " Value="Home"></asp:MenuItem>
+						<asp:MenuItem NavigateUrl="~/StorePage/Manager_AdjustmentVoucher.aspx" Text="    AdjustmentVoucher   " Value="AdjustmentVoucher"></asp:MenuItem>
+                         <asp:MenuItem NavigateUrl="~/LoginNew.aspx" Text="LogOut" Value="LogOut"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UnReadEmailNum.aspx" Text="ViewUnreadEmailNUm" Value="ViewUnreadEmailNUm"></asp:MenuItem>
+						
+					</Items>
+            		<StaticHoverStyle BackColor="#FBC531" />
+            		<StaticMenuItemStyle HorizontalPadding="20px" />
+            		<StaticMenuStyle HorizontalPadding="20px" VerticalPadding="20px" />
+				</asp:Menu>
+			</div>
+		</nav>
+
+
+		<div id="content" class="container-fluid">
+
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+			</asp:ContentPlaceHolder>
+
+		</div>
+
+
+		<footer class="page-footer " style="font-size: medium">
+			<div style="background-color: #333333;">
+				<div class="container text-center text-md-left mt-5">
+
+					<div class="row mt-3">
+
+						<div class="col-lg-3">
+							<h6 class="text-uppercase" style="color: #FFFFFF; font-size: large">Company name</h6>
+							<hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 150px;">
+							<p style="color: #FFFFFF; font-size: small">
+								Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-lg-3">
+							<h6 class="text-uppercase" style="color: #FFFFFF; font-size: large">Useful links</h6>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 130px;">
+							<p>
+								<a href="#!">About Us</a>
+							</p>
+							<p>
+								<a href="#!">Mobile App</a>
+							</p>
+							<p>
+								<a href="#!">Help</a>
+							</p>
+
+						</div>
+
+						<div class="col-lg-3">
+							<h6 class="text-uppercase" style="color: #FFFFFF; font-size: large">Contact Us</h6>
+
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+							<p style="color: #FFFFFF; font-size: small">
+								<i class="fa fa-home mr-3"></i>Kent Ridge, Singapore
+							</p>
+							<p style="color: #FFFFFF; font-size: small">
+								<i class="fa fa-envelope mr-3"></i>E123456@u.edu.sg
+							</p>
+							<p style="color: #FFFFFF; font-size: small">
+								<i class="fa fa-phone mr-3"></i>+ 01 234 811 88
+							</p>
+							<p style="color: #FFFFFF; font-size: small">
+								<i class="fa fa-print mr-3"></i>+ 01 234 120 89
+							</p>
+
+						</div>
+
+						<div class="col-lg-3" style="text-align:center;">
+							<div style="height:80px;"></div>
+							<div>
+								<a class="fb-ic" style="background-color: #ffffff;">
+									<i class="fa fa-facebook white-text mr-4"></i>
+								</a>
+								<a class="tw-ic" style="background-color: #ffffff;">
+									<i class="fa fa-twitter white-text mr-4"></i>
+								</a>
+								<a class="gplus-ic" style="background-color: #ffffff;">
+									<i class="fa fa-google-plus white-text mr-4"></i>
+								</a>
+								<a class="li-ic" style="background-color: #ffffff;">
+									<i class="fa fa-linkedin white-text mr-4"></i>
+								</a>
+								<a class="ins-ic" style="background-color: #ffffff;">
+									<i class="fa fa-instagram white-text mr-4"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="footer-copyright text-center py-3">
+					© 2018 Copyright:
+		  <a href="https://mdbootstrap.com/bootstrap-tutorial/">StationeryStoreTeam6.com</a>
+				</div>
+			</div>
+		</footer>
+
+	</form>
+
+</body>
+</html>
+

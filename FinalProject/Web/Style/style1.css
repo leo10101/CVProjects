@@ -1,0 +1,160 @@
+﻿
+.Button2{
+    background-color:wheat;
+    color:black;
+    border:2px solid #ff6a00;
+}
+
+.select {
+    font: 400 12px/1.3 "Helvetica Neue", sans-serif;
+    -webkit-appearance: none;
+    border: 1px solid hotpink;
+    line-height: 1;
+    outline: 0;
+    color: hotpink;
+    border-color: hotpink;
+    padding: 0.65em 2.5em 0.55em 0.75em;
+    border-radius: 0px;
+    background: linear-gradient(hotpink, hotpink) no-repeat, linear-gradient(-135deg, rgba(255,255,255,0) 50%, white 50%) no-repeat, linear-gradient(-225deg, rgba(255,255,255,0) 50%, white 50%) no-repeat, linear-gradient(hotpink, hotpink) no-repeat;
+    background-color: white;
+    background-size: 1px 100%, 20px 20px, 20px 20px, 20px 60%;
+    background-position: right 20px center, right bottom, right bottom, right bottom;
+}
+
+
+#Content {
+    position: center;
+    text-align: center;
+    font-family: Arial;
+}
+
+#Content2 {
+    position: center;
+    text-align: center;
+    padding-left: 250px;
+    font-family: Arial;
+}
+
+input.tbc {
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    border-bottom-color: aquamarine;
+}
+
+input.btc {
+    width: 70px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: gold;
+    background-color: lightgoldenrodyellow;
+    font-family: Arial;
+    font-size: medium;
+}
+
+input.bta {
+    width: 70px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: darksalmon;
+    text-shadow: initial;
+    background-color: lemonchiffon;
+    font-family: Arial;
+    font-size: medium;
+}
+
+input.btb {
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: deepskyblue;
+    background-color: aquamarine;
+    font-family: Arial;
+    font-size: medium;
+}
+
+input.btd {
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: deepskyblue;
+    background-color: crimson;
+    font-family: Arial;
+    font-size: medium;
+}
+
+.GV {
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+.table {
+    font-family: Arial;
+}
+
+
+.bg {
+    border-color: forestgreen;
+    color: darkcyan;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #000000
+}
+
+    .bg:hover {
+        background-color: #000000;
+        color: black;
+    }
+
+
+
+.by {
+    border-color: gold;
+    color: orange;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #000000
+}
+
+    .by:hover {
+        background-color: yellow;
+        color: white;
+    }
+
+
+.br {
+    border-color: maroon;
+    color: crimson;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #000000
+}
+
+    .br:hover {
+        background-color: tomato;
+        color: white;
+    }
+
+.t1 {
+	height:30px;
+	width:200px;
+    border: 1px solid thick;
+    border-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+	background-color:transparent;
+}
+
+
+.t2 {
+    color: black;
+    Border: none;
+    border-bottom: 1px;
+    Border-color: deepskyblue;
+}
