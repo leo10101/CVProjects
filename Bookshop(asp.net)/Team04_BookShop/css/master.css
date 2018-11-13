@@ -1,0 +1,41 @@
+﻿/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar  {
+    margin-bottom: 50px;
+    border-radius: 0;
+    background-color:black;
+    font-size:larger;
+    font-family:'Times New Roman', Times, serif;
+   color:wheat;
+   
+   
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0;
+    background-image: url('../images/abstract_background_hd_picture_169917.jpg');
+    color:black;
+    font-weight: bold;
+    font-family:Forte;
+    -webkit-animation:marquee 10s infinite linear;
+}
+@-webkit-keyframes marquee
+
+{
+    0%
+    {
+        background-position:0;
+    }
+ 100%
+ {
+     background-position:-1190px;
+ }
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: black;
+    background-image: url('../images/Footer.jpg');
+    color: black;
+    padding: 25px;
+}
