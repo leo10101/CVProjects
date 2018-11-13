@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textSize="18sp"
+    tools:context=".store.StoreRetrievalForm">
+
+
+    <TextView
+        android:id="@+id/col0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="25"
+        android:text="RequestID"
+        android:textSize="40px"
+
+        android:visibility="gone"></TextView>
+
+    <TextView
+        android:id="@+id/col1"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="25"
+        android:text="Item Name"
+        android:textAlignment="textStart"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/col4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"></TextView>
+
+    <TextView
+        android:id="@+id/col2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="25"
+        android:text="ItemCode"
+        android:textSize="40px"
+        android:visibility="gone"></TextView>
+
+    <TextView
+        android:id="@+id/col3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="25"
+        android:text="ReQty"
+        android:textSize="40px"
+        android:visibility="gone"></TextView>
+
+    <TextView
+        android:id="@+id/col4"
+        android:layout_width="101dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="25"
+        android:text="Collect Qty"
+        android:textAlignment="textStart"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/col5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"></TextView>
+
+    <EditText
+        android:id="@+id/col5"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_weight="25"
+        android:text="Disburse Qty"
+        android:textAlignment="textStart"
+        android:textColor="@color/c"
+        android:textSize="18sp"
+        android:windowSoftInputMode="adjustNothing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+
+</android.support.constraint.ConstraintLayout>

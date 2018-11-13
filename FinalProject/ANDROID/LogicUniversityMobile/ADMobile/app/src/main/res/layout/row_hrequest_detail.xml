@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="18sp">
+
+    <TextView
+        android:id="@+id/tvitemname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Item Name"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvqty"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:text="Qty"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvuom"
+                android:layout_width="259dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:text="Unit of Measure"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

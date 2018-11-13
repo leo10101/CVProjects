@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="18sp">
+
+    <TextView
+        android:id="@+id/tvrequestid"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="6dp"
+        android:text="Requested ID: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvrequestby"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="6dp"
+        android:text="Request By: "
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/lv_requestdetails"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="6dp"
+        android:text="Comment: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etcomment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="190dp"
+                android:layout_height="48dp"
+                android:text="Reject"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Approve"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store.ClerkHomePage"
+    android:textSize="18sp">
+
+
+    <TextView
+        android:id="@+id/titlehead"
+        android:layout_width="172dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Department Head"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="252dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="112dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:text="Employee ID: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/employeeIDT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:text="Employee Name: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/EmployeeNameT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:text="Department: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/DepartmentT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:text="Role: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/RoleT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

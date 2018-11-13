@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store.StoreDisbursementList"
+    android:textSize="18sp">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="165dp"
+                android:layout_height="48dp"
+                android:text="Category"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/item_tv"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:text="Item Name"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/item_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/itemCode_tv"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:text="ItemCode"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/transfer_tv"
+                android:layout_width="55dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+        <TableRow android:layout_height="104dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Unit of Measure"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/euom_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow android:layout_height="113dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Request Qty"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/eqty_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Submit Request"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</android.support.constraint.ConstraintLayout>

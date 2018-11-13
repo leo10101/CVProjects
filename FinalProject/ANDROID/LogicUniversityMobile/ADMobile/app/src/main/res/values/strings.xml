@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Stationery Store</string>
+    <string name="option1">Clerk Home</string>
+    <string name="option2">Disbursement List</string>
+    <string name="option3">Retrieval Form</string>
+    <string name="option4">Disbursement with AutoAJ</string>
+    <string name="option5">Logout</string>
+
+    <string name="option6">Employee Home</string>
+    <string name="option7">Request Stationery</string>
+
+
+    <string name="option9">Representative Home</string>
+    <string name="option10">Request Stationery</string>
+    <string name="option11">Change Collection Point</string>
+    <string name="option12">Call Clerk</string>
+
+    <string name="option13">Head Home</string>
+    <string name="option14">Request List</string>
+    <string name="option15">Request Details</string>
+
+    <string-array name="array_name">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+
+</resources>

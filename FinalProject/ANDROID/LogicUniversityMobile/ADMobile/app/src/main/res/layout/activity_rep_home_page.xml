@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".department.RepHomePage"
+    android:textSize="18sp">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="352dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Department Representative"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/EmployeeID"
+                android:layout_width="179dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Employee ID"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.459" />
+
+            <TextView
+                android:id="@+id/employeeIDT"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.461" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/EmployeeName"
+                android:layout_width="179dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Employee Name"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EmployeeID"
+                app:layout_constraintVertical_bias="0.073" />
+
+            <TextView
+                android:id="@+id/EmployeeNameT"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.57" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="179dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Role"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Department"
+                app:layout_constraintVertical_bias="0.128" />
+
+            <TextView
+                android:id="@+id/RoleT"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.785" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/Department"
+                android:layout_width="179dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Department"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EmployeeName"
+                app:layout_constraintVertical_bias="0.089" />
+
+            <TextView
+                android:id="@+id/DepartmentT"
+                android:layout_width="143dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.678" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

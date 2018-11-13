@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logicuniversity.mystationerystore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DIAL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".system.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".store.ClerkHomePage" />
+        <activity android:name=".store.StoreDisbursementList" />
+        <activity android:name=".store.StoreRetrievalForm" />
+        <activity android:name=".department.DeptemployeeHomePage" />
+        <activity android:name=".department.DeptheadHomePage" />
+        <activity android:name=".department.RequestStationery" />
+        <activity android:name=".department.RepHomePage" />
+        <activity android:name=".department.ChangeCollectionPoint" />
+        <activity android:name=".department.RequestList" />
+        <activity android:name=".department.RequestDetailActivity" />
+        <activity android:name=".department.CallClerk" />
+        <activity android:name=".department.RepresentativeRequestStationary" />
+        <activity android:name=".store.AutoAdjustmentDisbursement"></activity>
+    </application>
+
+</manifest>
