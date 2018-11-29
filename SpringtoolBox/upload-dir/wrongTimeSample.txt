@@ -1,0 +1,7 @@
+Scanner result for date 2018.08.25 
+Abnormal timestamps with line number appear in following locations:
+LS AB UM AC DM position           timestamp     LineNum  ERR
+1  0  0  1  0  1,33.686,33.690,3  01:00:02.181  3       
+1  0  0  1  0  1,33.686,33.690,3  00:00:03.182  4       
+1  0  0  1  0  1,33.686,33.690,3  00:00:04.182  5       
+1  0  0  1  0  1,33.686,33.690,3  00:00:01.184  6       
